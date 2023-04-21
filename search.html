@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <body>
-
         <head>
-            <meta charset="utf-8">
-            <meta name="description" content="My Health">
-            <meta name="keywords" content="Health, Public Services, Health Services, Travel Services, Medical Bill">
-            <meta name="author" content="Manar Alqurashi">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="css/style.css">
+                <meta charset="utf-8">
+                <meta name="description" content="My Health">
+                <meta name="keywords" content="Health, Public Services, Health Services, Travel Services, Medical Bill">
+                <meta name="author" content="Manar Alqurashi">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <style>
-        
+
             :root {
                 --main-color: #293029;
                 --main-bg-color: #a0dfe8;
@@ -35,13 +33,11 @@
             
             /* logo */
             header img{
-                position: fixed;
+                position:fixed;
                 top: 0px;
                 left: 0px;
             
             }
-            
-            
             
             
             *{
@@ -77,46 +73,13 @@
             
             
             
-            .image-float > img {
-                width: 20%;
-                height: 510px;
-                float:left;
-            }
-            
             
             a:hover{
                 background-color:#a0dfe8;
             }
 
-            p{
-                font-size: 15px;
-                font-weight:bold;
-                font-style:normal;
-                position:relative;
-                text-align:left;
-                left: 60px;
-                top: 4rem;
-                font-family: 'Lexend giga', sans-serif;
-                letter-spacing: 2px;
-                line-height: 30px;
-                color:#293039
-            }
 
-            button[type=submit]{
-                width: 150px;
-                margin-left: 60px;
-                margin-top: 5px;
-                background: #293039;
-                color: #a0dfe8;
-                border: none;
-                padding: 3px;
-                border-radius: 5px;
-                bottom: 0;
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
-            }
-
-            h1{
+            h2{
                 font-style: normal;
                 position:relative;
                 color:#293039;
@@ -124,14 +87,47 @@
                 font-weight:bold;
                 font-family: 'Lexend giga', sans-serif;
                 border: 10px;
-                left: 0;
+                left: 60px;
                 top: 55px;
                 line-height: 40px;
+                  }
+
+
+                  .img-float > img {
+                    width: 10%;
+                    height: 20%;
+                    float:right;
+                    text-align:right;
+                    
+                  }
+    
+
+            input{
+                width: 300px;
+                padding: 5px;
+                margin-top: 150px;
+                margin-left: 50px;
+                font-size: 18px;
+                font-family: verdana;
+                border:none
+            
+
+            }
+
+            button[type=submit]{
+                width: 150px;
+                margin-left: 60px;
+                margin-top: 40px;
+                background: #293039;
+                color: #a0dfe8;
+                border: none;
+                padding: 3px;
+                border-radius: 5px;
+                bottom: 0;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
                 
+            }
         
-        
-        
-                }
 
             footer{
                 background: white;
@@ -149,17 +145,18 @@
                 left: 20px;
                 color: #a0dfe8;
                 text-transform: capitalize;
-                bottom: 5px;
+                bottom: -23rem;
             }
             
             footer img{
                 position:relative;
                 left:20px;
-                bottom: -30rem;
+                bottom: 0;
             
             }
 
         </style>
+    
     <header>
         <h1><img src="Pictures/logopic.png" width="120" height="100"></h1>
         <nav>
@@ -172,49 +169,30 @@
                 <li><a href="#"Contact Us.html>Contact Us</a></li>
                 </ul>
         </nav>
+        <main>
+            
+            <section>
+                <h2>Search</h2>
+                <div class="container">
+                    <form>
+                        <input type="text" placeholder="What you are looking for?">
+                        <button type="submit">Search</button>
+                    </form>  
+                </div>
+                <div class="img-float">
+                    <img src="Pictures/search.jpg" width="120" height="100">
+                </div>
+            </section>
+        </main>
+    </header>
 
-<main>
-    <section>
-            <h1>Contact Us</h1>
-            <p>You can contact us for any medical inquiries or insurance issues, etc.</p>
-            <p>Call Us: (839) 334-5900 or (839) 475-4459
-                Monday - Friday: 7 am. - 7 pm.</p>
-
-            <div>
-                <p>
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="first name" firstname="firsrname" placeholder="Text box" required>
-                </p>
-                <p>
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="last name" firstname="lastname" placeholder="Text box" required>
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" email="email" placeholder="Text box" required>
-                </p>
-                <p>
-                    <label for="phonenumber">Phone Number:</label>
-                    <input type="text" id="phone number" phone number="phone number" placeholder="Text box" required>
-                </p>
-                <p>
-                    <label for="question">Question:</label>
-                    <textarea id="question" name="question" rows="5" cols="20"></textarea>
-                </p>
-                <p>
-                    <button type="submit">submit</button>
-                </p>
-            </div>
-    </section>
-</main>
-</header>
-<footer class="footer">
-    <p>
-        <a href="https://www.instagram.com/"target="_blank"><img src="Pictures/instagram.png" alt="Inst" width="30"></a>
-        <a href="https://twitter.com" target="_blank"><img src="Pictures/twitter.jpg"  width="30"></a>
-        <a href="https://www.google.com/gmail/about" target="_blank"><img src="Pictures/email.png"  width="30"></a>
-    </p>
-
-</footer>
-</body>
-</html>
+        <footer class="footer">
+            <p>
+                <a href="https://www.instagram.com/"target="_blank"><img src="Pictures/instagram.png" alt="Inst" width="30"></a>
+                <a href="https://twitter.com" target="_blank"><img src="Pictures/twitter.jpg"  width="30"></a>
+                <a href="https://www.google.com/gmail/about" target="_blank"><img src="Pictures/email.png"  width="30"></a>
+            </p>
+        
+        </footer>
+        </body>
+        </html>
