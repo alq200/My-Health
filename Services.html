@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+
+        <head>
+            <meta charset="utf-8">
+        <meta name="description" content="My Health">
+        <meta name="keywords" content="Health, Public Services, Health Services, Travel Services, Medical Bill">
+        <meta name="author" content="Manar Alqurashi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+    <style>
+        
+        :root {
+            --main-color: #293029;
+            --main-bg-color: #a0dfe8;
+        }
+        
+        html{
+            background-color: var(--main-bg-color);
+        }
+        
+        header{
+            position: fixed;
+            width: 1500px;
+            height: 150px;
+            top: -50px;
+            left: 60px;
+            padding: 28px 5%;
+            background: #293039;
+            box-shadow: 0 1px 5px var(--main-color);
+        }
+        
+        /* logo */
+        header img{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+
+        
+        }
+        
+        
+        
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: montserrat;
+        
+        }
+        
+        nav ul{
+            float: .5rem;
+            margin-right: 20px;
+            text-align: center; 
+            width: 100%;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 120px;
+            padding-top: 0;
+            letter-spacing: 1px;
+            margin-left: auto;
+            margin: 0 5px;
+            
+        }
+        nav ul li a{
+            color: white;
+            font-size: 15px;
+            font-weight:lighter;
+            text-transform: uppercase;
+            padding: 0;
+            transition: 0.7s;
+            text-align: left;
+        }
+        
+        
+        
+        a:hover{
+            background-color:#a0dfe8
+        }
+
+       
+       
+
+        .col{
+            width: 250px;
+            height: 400px;
+            background-color: #293039;
+            float:left;
+            border: 1px solid #a0dfe8;
+            padding: 40px;
+            margin: 10px;
+            box-shadow:  0 8px 16px 0 #a0dfe8 inset;
+            border-radius: 20px;
+        }
+
+        .col h1{
+            font-style: normal;
+            font-size: 15px;
+            color:#a0dfe8;
+            font-family: 'lexend giga', sans-serif;
+            font-weight:bolder;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .col p{
+            font-style: normal;
+            font-size: 15px;
+            color:#a0dfe8;
+            font-family: 'lexend giga', sans-serif;
+            font-weight: lighter;
+            height: 70px;
+            line-height: 20px;
+            text-align: center;
+
+        }
+
+
+        button[type=testing]{
+            position: relative;
+            top: 130px;
+            left: -50px;
+            width: 150px;
+            margin-left: 60px;
+            margin-top: 5px;
+            background:#a0dfe8;
+            color:#293039;
+            border: none;
+            padding: 3px;
+            border-radius: 10px;
+            bottom: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+        }
+
+        button[type=Medicines]{
+            position:relative;
+            top: 140px;
+            left: -50px;
+            width: 150px;
+            margin-left: 60px;
+            margin-top: 5px;
+            background:#a0dfe8;
+            color:#293039;
+            border: none;
+            padding: 3px;
+            border-radius: 10px;
+            bottom: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+        } 
+
+        button[type=MedicalAssistance]{
+            position: relative;
+            top:150px;
+            left: -50px;
+            width: 150px;
+            margin-left: 60px;
+            margin-top: 5px;
+            background:#a0dfe8;
+            color:#293039;
+            border: none;
+            padding: 3px;
+            border-radius: 10px;
+            bottom: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+        } 
+
+        button[type=HealthPassport]{
+            position: relative;
+            top: 165px;
+            left: -50px;
+            width: 150px;
+            margin-left: 60px;
+            margin-top: 5px;
+            background:#a0dfe8;
+            color:#293039;
+            border: none;
+            padding: 3px;
+            border-radius: 10px;
+            bottom: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+        } 
+
+        button[type=HealthTravelRequirements]{
+            position: relative;
+            top: 175px;
+            left: -60px;
+            width: 170px;
+            margin-left: 60px;
+            margin-top: 5px;
+            background:#a0dfe8;
+            color:#293039;
+            border: none;
+            padding: 3px;
+            border-radius: 10px;
+            bottom: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+        } 
+
+        button[type=Reguriement]{
+            position: relative;
+            top: 165px;
+            left: -50px;
+            width: 150px;
+            margin-left: 60px;
+            margin-top: 5px;
+            background:#a0dfe8;
+            color:#293039;
+            border: none;
+            padding: 3px;
+            border-radius: 10px;
+            bottom: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+        } 
+
+        button[type=Payment]{
+            position: relative;
+            top: 175px;
+            left: -50px;
+            width: 150px;
+            margin-left: 60px;
+            margin-top: 5px;
+            background:#a0dfe8;
+            color:#293039;
+            border: none;
+            padding: 3px;
+            border-radius: 10px;
+            bottom: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+        } 
+
+        button[type=Donations]{
+            position: relative;
+            top: 170px;
+            left: -50px;
+            width: 150px;
+            margin-left: 60px;
+            margin-top: 5px;
+            background:#a0dfe8;
+            color:#293039;
+            border: none;
+            padding: 3px;
+            border-radius: 10px;
+            bottom: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+        } 
+
+        
+
+        
+
+
+        button{
+            width: 150px;
+            margin-left: 8px;
+            margin-top: 60px;
+            background:#a0dfe8;
+            padding: 3px;
+            border-radius: 10px;
+            color:#293039;
+            border: none;
+            border-radius: 10px;
+            bottom: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            position: relative;
+            top: 120px;
+            left: -2px;
+        }
+
+
+        button[type=MedicalAssistance]{
+            width: 150px;
+            margin-left: 8px;
+            margin-top: 60px;
+            background:#a0dfe8;
+            padding: 3px;
+            border-radius: 10px;
+            color:#293039;
+            border: none;
+            border-radius: 10px;
+            bottom: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            position: relative;
+            top: 95px;
+            left: -1px;
+        }
+
+
+
+        
+       
+        
+        footer{
+            background: white;
+            position:fixed;
+            width: 1600px;
+            height: 70px;
+            left: -60px;
+            padding: -28px 5%;
+            bottom: 0;
+        
+        }
+        
+        footer p{
+            position: fixed;
+            left: 20px;
+            color: #a0dfe8;
+            text-transform: capitalize;
+            bottom: 5px;
+        }
+        
+        footer img{
+            position: relative;
+            left: 20px;
+            bottom: 1rem;
+        
+        }
+    </style>
+
+    <header>
+        <h1><img src="Pictures/logopic.png" width="120" height="100"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Appointment.html">Appointment</a></li>
+                <li><a href="Search.html">Search</a></li>
+                <li><a href="Sign in.html">Sign in</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                </ul>
+        </nav>
+    
+        <main>
+            <section>
+                <div class="container">
+
+                        <div class="col">
+                            
+                                    <h1>Public Services:</h1>
+
+                            <p>We are very grateful for the donations we receive from you and your dedication to supporting patients.
+                                 All donation services are provided to emergency cases first,and you can donate through our stand
+                                    because any donation makes a real difference in a person's life.</p>
+
+                                    <h3>
+                                        <button type="Donations">Donations</button>
+        
+                                    </h3>
+
+                                    <p>
+                                        <button type="Cautious Mode">Cautious Mode</button>
+                                    </p>
+
+                        </div>
+                        
+                        
+                </div>
+                <div class="container1">
+
+                    <div class="col">
+
+                        <h1>Health Services:</h1>
+
+                        <p>You can view the results of medical tests and medicines, 
+                            and if you need medical assistance. For more information click below.</p>
+
+                            <h3>
+                                <button type="testing">Testing</button>
+                                <button type="Medicines">Medicines</button>
+                                <button type="MedicalAssistance">MedicalAssistance</button>
+                            </h3>
+
+                          
+                                
+                    
+
+                </div>
+
+                <div class="container2">
+
+                    <div class="col">
+
+                        <h1>Travel Services:</h1>
+
+
+                        <p>You can view vaccination requirements and travel regulations,
+                            including information about travel restrictions,
+                            as well as review your health history. 
+                            For more information click below.</p>
+
+                        <h3>
+
+                            <button type="HealthPassport">HealthPassport</button>
+                            <button type="HealthTravelRequirements">HealthTravelRequirements</button>
+                        </h3>
+                        
+
+                
+                </div>
+                <div class="container3">
+
+                    <div class="col">
+
+                        <h1>Medical Bill:</h1>
+
+
+                        <p>Dear patients, the invoice will be sent to you automatically on your phone so that you 
+                            are fully aware of all the requirements,and you will be reminded to pay automatically 
+                            For more information click below.</p>
+
+                            <h3>
+
+                                <button type="Reguriement">Reguriement</button>
+                                <button type="Payment">Payment</button>
+                            </h3>
+
+            </div>
+            </section>
+        </main>
+    </header>
+
+        <footer class="footer">
+            <p>
+                <a href="https://www.instagram.com/"target="_blank"><img src="Pictures/instagram.png" alt="Inst" width="30"></a>
+                <a href="https://twitter.com" target="_blank"><img src="Pictures/twitter.jpg"  width="30"></a>
+                <a href="https://www.google.com/gmail/about" target="_blank"><img src="Pictures/email.png"  width="30"></a>
+            </p>
+
+        </footer>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+
+        <head>
+            <meta charset="utf-8">
+            <meta name="description" content="My Health">
+            <meta name="keywords" content="Health, Public Services, Health Services, Travel Services, Medical Bill">
+            <meta name="author" content="Manar Alqurashi">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+        <style>
+        
+            :root {
+                --main-color: #293029;
+                --main-bg-color: #a0dfe8;
+                --bg-color: #e8391e;
+            }
+            
+            html{
+                background-color: var(--main-bg-color);
+            }
+            
+            header{
+                position: fixed;
+                width: 1500px;
+                height: 150px;
+                top: -50px;
+                left: 60px;
+                padding: 28px 5%;
+                background: #293039;
+                box-shadow: 0 1px 5px var(--main-color);
+            }
+            
+            /* logo */
+            header img{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+            
+            }
+            
+            
+            
+            
+            *{
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+            }
+            body{
+                font-family: montserrat;
+            
+            }
+            
+            nav ul{
+                float: .5rem;
+                margin-right: 20px;
+                text-align: center; 
+                width: 100%;
+            }
+            nav ul li{
+                display: inline-block;
+                line-height: 120px;
+                padding-top: 0;
+                letter-spacing: 1px;
+                margin-left: auto;
+                margin: 0 5px;
+                
+            }
+            nav ul li a{
+                color: white;
+                font-size: 15px;
+                font-weight:lighter;
+                text-transform: uppercase;
+                padding: 0;
+                transition: 0.7s;
+                text-align: left;
+            }
+            
+            
+            .image-float > img {
+                width: 20%;
+                height: 510px;
+                float:left;
+            }
+            
+            
+            a:hover{
+                background-color:#a0dfe8;
+            }
+
+            p{
+                font-size: 15px;
+                font-weight:bold;
+                font-style:normal;
+                position:relative;
+                text-align:left;
+                left: 60px;
+                top: 4rem;
+                font-family: 'Lexend giga', sans-serif;
+                letter-spacing: 2px;
+                line-height: 30px;
+                color:#293039
+            }
+
+            button[type=submit]{
+                width: 150px;
+                margin-left: 60px;
+                margin-top: 5px;
+                background: #293039;
+                color: #a0dfe8;
+                border: none;
+                padding: 3px;
+                border-radius: 5px;
+                bottom: 0;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+            }
+
+            h1{
+                font-style: normal;
+                position:relative;
+                color:#293039;
+                font-size: 20px;
+                font-weight:bold;
+                font-family: 'Lexend giga', sans-serif;
+                border: 10px;
+                left: 4rem;
+                top: 55px;
+                line-height: 40px;
+
+                
+                }
+
+            footer{
+                background: white;
+                position:fixed;
+                width: 1600px;
+                height: 70px;
+                left: -60px;
+                padding: -28px 5%;
+                bottom: 0;
+            
+            }
+            
+            footer p{
+                position: fixed;
+                left: 20px;
+                color: #a0dfe8;
+                text-transform: capitalize;
+                bottom: 5px;
+            }
+            
+            footer img{
+                position:relative;
+                left:20px;
+                bottom: -30rem;
+            
+            }
+
+        </style>
+    <header>
+        <h1><img src="Pictures/logopic.png" width="120" height="100"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Appointment.html">Appointment</a></li>
+                <li><a href="Search.html">Search</a></li>
+                <li><a href="Sign in.html">Sign in</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                </ul>
+        </nav>
+
+<main>
+    <section>
+            <h1>Contact Us</h1>
+            <p>You can contact us for any medical inquiries or insurance issues, etc.</p>
+            <p>Call Us: (839) 334-5900 or (839) 475-4459
+                Monday - Friday: 7 am. - 7 pm.</p>
+
+            <div>
+                <p>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="first name" firstname="firsrname" placeholder="Text box" required>
+                </p>
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="last name" firstname="lastname" placeholder="Text box" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" email="email" placeholder="Text box" required>
+                </p>
+                <p>
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="text" id="phone number" phone number="phone number" placeholder="Text box" required>
+                </p>
+                <p>
+                    <label for="question">Question:</label>
+                    <textarea id="question" name="question" rows="5" cols="20"></textarea>
+                </p>
+                <p>
+                    <button type="submit">submit</button>
+                </p>
+            </div>
+    </section>
+</main>
+</header>
+<footer class="footer">
+    <p>
+        <a href="https://www.instagram.com/"target="_blank"><img src="Pictures/instagram.png" alt="Inst" width="30"></a>
+        <a href="https://twitter.com" target="_blank"><img src="Pictures/twitter.jpg"  width="30"></a>
+        <a href="https://www.google.com/gmail/about" target="_blank"><img src="Pictures/email.png"  width="30"></a>
+    </p>
+
+</footer>
+</body>
+</html>
